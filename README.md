@@ -2,8 +2,7 @@
 
 A beautifully designed blog platform built with Next.js 15 (App Router) and Tailwind CSS, featuring a responsive design, dark mode support, and dynamic blog post routing.
 
-![Debug Diary Blog Screenshot](https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
-![alt text](image.png)
+![Debug Diary Blog Screenshot](image.png)
 
 ## Features
 
