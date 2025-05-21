@@ -16,8 +16,9 @@ export async function generateMetadata({
 }: {
   params: { id: string };
 }): Promise<Metadata> {
+  const awaitedParams = await Promise.resolve(params);
   try {
-    const post = await getPostById(params.id);
+    const post = await getPostById(awaitedParams.id);
     return {
       title: `${post.title} | Debug Diary Blog`,
       description: post.body.substring(0, 160),
@@ -25,7 +26,7 @@ export async function generateMetadata({
   } catch (error) {
     console.error("Error fetching post for metadata:", error);
     return {
-      title: "Post Not Found | NextBlog",
+      title: "Post Not Found | Debug Diary Blog",
       description: "The requested post could not be found.",
     };
   }
@@ -36,11 +37,12 @@ export default async function BlogPostPage({
 }: {
   params: { id: string };
 }) {
+  const awaitedParams = await Promise.resolve(params);
   try {
-    const post = await getPostById(params.id);
+    const post = await getPostById(awaitedParams.id);
 
     return (
-      <article className=" max-w-5xl py-12 md:py-24 lg:py-32 px-4">
+      <article className="max-w-5xl py-12 md:py-24 lg:py-32 px-4">
         <div className="space-y-4">
           <Button
             variant="ghost"

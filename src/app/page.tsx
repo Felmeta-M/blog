@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -32,10 +33,12 @@ export default function Home() {
               </div>
             </div>
             <div className="">
-              <img
+              <Image
                 src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Blog Hero"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full"
+                width={600}
+                height={400}
               />
             </div>
           </div>
