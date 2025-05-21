@@ -1,3 +1,9 @@
+# Debug Diary Blog - A Modern Blog Platform
+
+A beautifully designed blog platform built with Next.js 15 (App Router) and Tailwind CSS, featuring a responsive design, dark mode support, and dynamic blog post routing.
+
+![Debug Diary Blog Screenshot](screenshot.png)
+
 ## Getting Started
 
 ### Prerequisites
@@ -44,12 +50,6 @@ npm run build
 # or
 yarn build
 ```
-
-# Debug Diary Blog - A Modern Blog Platform
-
-A beautifully designed blog platform built with Next.js 15 (App Router) and Tailwind CSS, featuring a responsive design, dark mode support, and dynamic blog post routing.
-
-![Debug Diary Blog Screenshot](screenshot.png)
 
 ## Features
 
