@@ -3,7 +3,7 @@ import { getAllPosts } from "@/lib/api";
 import { PostCard } from "@/components/post-card";
 
 export const metadata: Metadata = {
-  title: "Blog | NextBlog",
+  title: "Blog | Debug Diary Blog",
   description: "Read the latest articles and insights on our blog.",
 };
 
@@ -11,8 +11,8 @@ export default async function BlogPage() {
   const posts = await getAllPosts();
 
   return (
-    <section className="container py-12 md:py-24 lg:py-32">
-      <div className="mx-auto flex max-w-[980px] flex-col items-start gap-2">
+    <section className=" py-12 md:py-24 lg:py-32 px-4">
+      <div className=" flex max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1]">
           Latest Articles
         </h1>
